@@ -25,35 +25,73 @@
   ],
 
   "launch_handler": {
-    "client_mode": "navigate-existing"
-  },
+{
+  "name": "Estore",
+  "short_name": "Estore",
+  "description": "Save more with our smart Estore shopping experience.",
+  "start_url": "/Estore/index.html",
+  "scope": "/Estore/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "orientation": "portrait-primary",
 
-  "screenshots": [
+  "icons": [
     {
-      "src": "/screenshots/screen1.png",
-      "sizes": "720x1280",
-      "type": "image/png",
-      "label": "Home Page"
+      "src": "/Estore/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
     },
     {
-      "src": "/screenshots/screen2.png",
-      "sizes": "720x1280",
-      "type": "image/png",
-      "label": "Yield Result Page"
+      "src": "/Estore/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/Estore/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/Estore/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/Estore/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/Estore/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Estore/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/Estore/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
 
   "shortcuts": [
     {
-      "name": "Open Yield Result",
-      "short_name": "Yield",
-      "description": "Go directly to the yield results page",
-      "url": "/yield.html",
-      "icons": [{ 
-        "src": "/icons/yield-result-icon.png", 
-        "sizes": "192x192",
-        "type": "image/png"
-      }]
+      "name": "Saved Items",
+      "short_name": "Saved",
+      "description": "Quickly check your saved items.",
+      "url": "/Estore/saved.html",
+      "icons": [
+        {
+          "src": "/Estore/icons/shortcut-saved.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ]
-}
+  }
