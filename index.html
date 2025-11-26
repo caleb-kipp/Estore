@@ -2123,6 +2123,10 @@ body { margin:0; font-family:system-ui; background:#0f1623; color:white; }
     // Open cart/wishlist via footer links hash (progressive enhancement)
     window.addEventListener('hashchange', ()=>{
       if(location.hash==='#cart') openModal('#cartModal', renderCart);
-    });
+    });if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/Estore/sw.js")
+    .then(reg => console.log("SW registered:", reg))
+    .catch(err => console.log("SW error:", err));
+}
   </script></body>
 </html>
